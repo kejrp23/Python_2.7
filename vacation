@@ -1,3 +1,6 @@
+# Training Excersise
+# Jason Pittman
+# Feburary 13, 2016   print datetime(%s/%s/%s) % now.month,now.day,now.year
 # This is a program that I wrote on code academy using their tutorial
 # I wanted to keep a copy so I'm keeping it here.
 # I would however love to take this to the next level by somehow asking a user to
