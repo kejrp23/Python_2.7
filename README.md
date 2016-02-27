@@ -3,8 +3,11 @@
 This is where I will be putting my 
 python thoughts and idea's.
 
-Please feel free to fork this repo and make changes!
-If you make something much better please share it with me!
+I will also be putting my projects from various
+websites here as storage and reference as I learn them.
+
+I'll be editing them to try and make them into bigger better programs. If you see ways to clean up my code feel free to share. 
+
 
 
 Thanks
