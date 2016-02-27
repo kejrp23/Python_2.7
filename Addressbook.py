@@ -18,6 +18,8 @@ From time import sleep
 print "initializing program................"
 sleep(3)
 
+print " importing address database please wait "
+sleep(3)
 
 print " Welcome to Address Book 1.0 "
 
