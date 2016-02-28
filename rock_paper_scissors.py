@@ -35,7 +35,7 @@ def decide_winner(user_choice,computer_choice):
   if user_choice_index == computer_choice_index:
     print "You both picked the same choice therefore it's a tie!"
   elif user_choice_index == 0 and computer_choice_index == 2:
-  	print YOU_WIN
+    print YOU_WIN
   elif user_choice_index == 1 and computer_choice_index == 0:
     print YOU_WIN
   elif user_choice_index == 2 and computer_choice_index == 1:
