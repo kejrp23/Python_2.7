@@ -28,14 +28,24 @@ sleep(3)
 
 print " Welcome to Address Book 1.0 "
 
-print "Your address book is empty lets fill it"
+def initial_opening_screen():
+  choices = raw_input("Please make a selection: 1 - Scan Address Book, 2 - New Entry:  ")
+  if choices == 1:
+    print "This option isn't ready yet, sorry!"
+    return initial_opening_screen()
+  elif choices == 2:
+    print "Loading Entry Screen......"
+    return adding_addresses()
+  else:
+    return initial_opening_screen()
+
 
 
 
 def adding_addresses(name, phone, email):
-  name = rawinput("Please enter the name: ")
-  phone = rawinput("Pleaes enter Phone number: ")
-  email = rawinput("Please enter Email Address: ")
+  name = raw_input("Please enter the name: ")
+  phone = raw_input("Pleaes enter Phone number: ")
+  email = raw_input("Please enter Email Address: ")
   return name + phone + email
   
 adding_addresses(name, phone, email)
