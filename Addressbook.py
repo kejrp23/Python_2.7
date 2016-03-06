@@ -12,8 +12,13 @@ as I am learning Python.
 """
 
 
-From datetime import datetime
-From time import sleep
+
+from time import sleep
+
+addresses = {"Name" :[],
+              "Phone Number" :[],
+              "Email Address" :[],
+              }
 
 print "initializing program................"
 sleep(3)
@@ -23,3 +28,15 @@ sleep(3)
 
 print " Welcome to Address Book 1.0 "
 
+print "Your address book is empty lets fill it"
+
+
+
+def adding_addresses(name, phone, email):
+  name = rawinput("Please enter the name: ")
+  phone = rawinput("Pleaes enter Phone number: ")
+  email = rawinput("Please enter Email Address: ")
+  return name + phone + email
+  
+adding_addresses(name, phone, email)
+  
