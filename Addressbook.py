@@ -29,11 +29,11 @@ sleep(3)
 print " Welcome to Address Book 1.0 "
 
 def initial_opening_screen():
-  choices = raw_input("Please make a selection: 1 - Scan Address Book, 2 - New Entry:  ")
-  if choices == 1:
+  choices = raw_input("Please type a selection: Scan - Scan Address Book, Add - New Entry:  ")
+  if choices.lower == "scan" :
     print "This option isn't ready yet, sorry!"
     return initial_opening_screen()
-  elif choices == 2:
+  elif choices.lower == "add" :
     print "Loading Entry Screen......"
     return adding_addresses()
   else:
