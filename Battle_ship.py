@@ -1,8 +1,8 @@
 """
-Created on Code Academy in python lauguage project.
+Created on Code Academy in python language project.
 Created by Jason R. Pittman 
 Created on 3/19/16
-Code partially modified from orginial state.
+Code partially modified from orginal state.
 """
 
 
