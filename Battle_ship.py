@@ -29,9 +29,12 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
+"""
+REMOVE THESE COMMENTS TO REVEAL
+LOCATION OF SHIP FOR DEBUGGING
 print ship_row
 print ship_col
-
+"""
 #This is the main part of the game
 
 for turn in range(4):
