@@ -1,6 +1,6 @@
 """
 Created on 3/26/27
-Created for Codeacademy Training exersize.
+Created for Codeacademy Training exercise.
 Written by: Jason R. Pittman
 Note: All comments are my own for information purpose and future building ideas.
 Note: They reflect my ideas and my ideas alone
