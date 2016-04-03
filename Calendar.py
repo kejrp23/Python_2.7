@@ -88,7 +88,7 @@ def start_calendar():
             del calendar[date]
             print 'The Event Was Successfully Deleted'
           else:
-            print 'No Event was found!
+            print 'No Event was found!'
     
     
     #Time to exit the program        
