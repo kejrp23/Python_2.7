@@ -1,6 +1,6 @@
 """
 Created on 3/26/27
-Created for Codeacademy Training exercise.
+Created for Codeacademy Training exersize.
 Written by: Jason R. Pittman
 Note: All comments are my own for information purpose and future building ideas.
 Note: They reflect my ideas and my ideas alone
@@ -36,12 +36,17 @@ def start_calendar():
   while start:#keeps the program running unless exited by choice
     user_choice = raw_input('A to add, U to Update, V to View, D to Delete, X to Exit: ')
     user_choice = user_choice.upper()
+    
+    
     #Adding the Choices they should all be similiar
     if user_choice == 'V':
       if len(calendar.keys()) < 1: # this checks to see if anything is on the calendar by searching the calendar dictionary keys to see if anything is on them
         print "Calendar Empty"
       else:
         print calendar
+        
+        
+        
     # Choice two - update
     elif user_choice == 'U':
       date = int(raw_input('Enter Date (MM/DD/YYYY): '))
@@ -50,16 +55,49 @@ def start_calendar():
       calendar[date] = update
       print 'Calendar Successfully Updated'
       print calendar
+      
+      
     # Choice three - Add
     elif user_choice == 'A':
       event = raw_input('Enter Event: ')
       date = int(raw_input('Enter Date (MM/DD/YYYY): '))
-      if (len(date) > 10):
-      
-                 
-      
-                 
-      
+      if (len(date) > 10 or int(date[6:]) < int(strftime("%Y"))):#check the date to make sure it's 10 characters long and to make sure that it isn't older than the current year. (len(date[6:]) splices the date looking for the current year and compares it to the %Y in strftime
+      	print 'Invalid Date!' #executes if date isn't long enough or is in the past.
+        try_again = raw_input("Try Again? Y for yes, N for No: ")
+        try_again.upper()
+        if try_again == 'Y':
+          continue #Starts the loop over
+        else:
+          start = False #ends the program if the user doesn't want to continue
+      else:
+        calendar[date] = event
+        print 'Event Added Successfully!'
+        print calendar
+        continue
+    
+    
+    #the last choice Delete
+    elif user_choice == 'D':
+      if len(calendar.keys()) < 1:
+        print 'Calendar is empty'
+        
+      else:
+        event = raw_input("What Event")
+        for date in calendar.keys():
+          if event == calendar[date]:
+            del calendar[date]
+            print 'The Event Was Successfully Deleted'
+          else:
+            print 'No Event was found!
+    
+    
+    #Time to exit the program        
+		elif user_choice == 'X':
+      start = False
+            
+    else:
+      print 'That command was not recognized'
+      start = False
         
 
         
@@ -67,5 +105,4 @@ def start_calendar():
         
         
         
-        
-start_calendar() #launcher for debugging
+start_calendar() #launcher for debuggi
